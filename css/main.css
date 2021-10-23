@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* GENRAL */
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-container {
+    width: 981px;
+}
+
+
+/* FONTS */
+
+@font-face {
+    font-family: eurofurence;
+    src: url(/fonts/eurofurence/eurof55.ttf);
+}
+
+@font-face {
+    font-family: leto-regular;
+    src: url(/fonts/Lato/Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family: leto-bold;
+    src: url(/fonts/Lato/Lato-Bold.ttf);
+}
+
+
+/* HEADER */
+
+header {
+    height: 131px;
+    display: flex;
+    align-items: center;
+    background-color: #292929;
+    border-bottom: 3px black solid;
+}
+
+header .header-contect {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+header .header-logo {
+    font-family: eurofurence;
+    font-size: 2.5rem;
+    color: #FFFFFF;
+}
+
+.main-menu ul {
+    display: flex;
+}
+
+.main-menu ul li a {
+    display: flex;
+    width: 131px;
+    height: 131px;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    font-family: leto-bold;
+    border-right: 1px black solid;
+    border-left: 1px black solid;
+    transition: border 0.2s linear;
+}
+
+.main-menu ul li a:hover {
+    border-bottom: 4px #58C93A solid;
+    color: #58C93A;
+}
+
+.main-content {
+    margin: auto;
+    border: 1px #C2C1C1 solid;
+}
+
+.last {
+    margin-bottom: 80px;
+}
+
+.post {
+    margin-top: 80px;
+    display: flex;
+}
+
+.post img {
+    height: 308px;
+    width: 496px;
+    object-fit: cover;
+    margin-inline-end: 15px;
+}
+
+.post .post-txt {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: stretch;
+}
+
+.post .post-txt .post-title {
+    font-size: 1.428rem;
+    font-family: leto-bold;
+    text-transform: uppercase;
+    margin-bottom: 58px;
+}
+
+.post .post-txt .post-Summary {
+    font-family: leto-regular;
+    width: 445px;
+}
+
+.post .post-txt .continu-btn {
+    position: absolute;
+    bottom: 0;
+    font-family: leto-bold;
+    width: 187px;
+    height: 41px;
+    color: #C2C1C1;
+    border: 2px #C2C1C1 solid;
+    border-radius: 20px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.arrow {
+    display: none;
+    color: #58C93A;
+    font-weight: 900;
+}
+
+.post .post-txt .continu-btn:hover {
+    color: #58C93A;
+    border-color: #58C93A;
+}
+
+.post .post-txt .continu-btn:hover>.arrow {
+    display: inline-block
+}
+
+.nav-btn {
+    margin: auto;
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px #C2C1C1 solid;
+    border-top: none;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.nav-btn button {
+    font-size: 1.125rem;
+    font-family: leto-bold;
+    background-color: transparent;
+    border: none;
+    text-transform: uppercase;
+    color: #818181;
+    cursor: pointer;
+}
+
+footer {
+    height: 316px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F8F8F8;
+    gap: 32px;
+}
+
+footer .footer-logo {
+    color: #292929;
+    font-family: eurofurence;
+    font-size: 2.5rem;
+}
+
+footer p {
+    color: #A6A6A6;
+}
+
+footer .shar-icons {
+    display: flex;
+    gap: 26px;
+}
+
+.shar-icons .icon {
+    width: 41px;
+    height: 41px;
+    background-color: #E5E5E5;
+}
+
+.shar-icons .icon:hover {
+    background-color: #4267B2;
+}
