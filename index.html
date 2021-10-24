@@ -13,8 +13,10 @@
     <header>
         <div class="header-contect main-container">
             <h1 class="header-logo">Blogin</h1>
+            <button class="open-menu" onclick="onOpenMenue()">☰</button>
             <nav class="main-menu">
                 <ul>
+                    <button class="close-menu" onclick="onCloseMenue()">✖️</button>
                     <li><a href="#">Journal</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Work</a></li>
@@ -82,5 +84,17 @@
         </div>
 
     </footer>
+    <script>
+        function onOpenMenue() {
+            document.body.classList.add('menu-is-open')
 
+        }
+
+        function onCloseMenue() {
+            document.body.classList.remove('menu-is-open')
+
+        }
+    </script>
 </body>
+
+</html>
